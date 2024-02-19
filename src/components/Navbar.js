@@ -18,7 +18,7 @@ function NavBar() {
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 20||window.innerWidth<1000) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
@@ -33,6 +33,7 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
+      
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
