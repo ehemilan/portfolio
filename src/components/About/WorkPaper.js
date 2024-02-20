@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Row } from "react-bootstrap";
 
 import TELEKOM from "../../Assets/Projects/TELEKOM.png";
-import HLA from "../../Assets/Projects/emotion.png";
+import HLA from "../../Assets/Projects/HLA.png";
 import IRCS from "../../Assets/Projects/IRCS.png";
 import HPETRACK from "../../Assets/Projects/HPETRACK.png"
 import HPENDDC from "../../Assets/Projects/HPENDDC.png"
 import HPEPW from "../../Assets/Projects/HPEPW.png"
-import chatify from "../../Assets/Projects/chatify.png";
 import CSE from "../../Assets/Projects/CSE.png";
 import VM from "../../Assets/Projects/VM.png";
 import DATAVERSE from "../../Assets/Projects/DATAVERSE.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import ProjectCard from "./ProjectCards";
 import pressmen from "../../Assets/works/Pressmen.png";
 import schauer from "../../Assets/works/Schauer.jpg";
@@ -131,7 +129,7 @@ function Experiences({ choosen }) {
                             title="Software updating manager system 
                             (TrackFlow)"
                             description="HPE managing as 3rd party corporation software updates for miltinational customers. To this operation the corp must holding all information of software updating. For example who works on updating of application and how many time cost an updating. My application supports this functionality."
-                            ghLink="/swumst"
+                            ghLink="https://trackflowinteractive.web.app/"
                             demoLink="/swumst"
                         />
                     </Col>
@@ -150,7 +148,7 @@ function Experiences({ choosen }) {
                             imgPath={HPEPW}
                             isBlog={false}
                             title="Bios pasword for HP notebooks"
-                            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+                            description="This program is written in powershell. It creates a bios password for HP notebook. It calls Bios poweron password. It is important to secure all user data."
                             demoLink="/poweron"
                         />
                     </Col>
@@ -167,7 +165,7 @@ function Experiences({ choosen }) {
                 <br/>
                 <br/>
                 <p style={{ textAlign: "justify" , fontSize:20}}>
-                    I am working to Hewlett Packard as full time <span className="purple">Medior Softwaredeveloper</span>. I am working remotely in an <span className="purple"></span>international team.
+                    I am working at Pressmen kft. from october 2022 as <span className="purple">Medior Softwaredeveloper</span>. Throught this company i met HPE and HP. 
 
                 </p>
                 <h4 style={{textAlign:"left", fontSize:30}}>Used tools</h4>
@@ -194,7 +192,7 @@ function Experiences({ choosen }) {
                             imgPath={VM}
                             isBlog={false}
                             title="Version monitoring"
-                            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+                            description="For up to date application setups, application versions must be following. This application sends monthly a report about application versions."
                             demoLink="/vm"
                         />
                     </Col>
@@ -203,7 +201,7 @@ function Experiences({ choosen }) {
                             imgPath={CSE}
                             isBlog={true}
                             title="Vizualize ingram data"
-                            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+                            description="Ingram supports subscribers with APIs. I wrote this front to vizualize requested data from Ingram."
                             ghLink="https://ms.csebusiness.hu/"
                         />
                     </Col>
@@ -212,7 +210,7 @@ function Experiences({ choosen }) {
                             imgPath={DATAVERSE}
                             isBlog={true}
                             title="Dataverse"
-                            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+                            description="Dataverse is an open source project of Harward University. I created a self cosmetized publication site with hungarian translation."
                             ghLink="https://dataverse.harvard.edu/"
                         />
                     </Col>
@@ -256,12 +254,10 @@ function Experiences({ choosen }) {
                 <Row style={{ justifyContent: "center", paddingBottom: "10px"  , fontSize:20}}>
                     <Col md={4} className="project-card">
                         <ProjectCard
-                            imgPath={chatify}
+                            imgPath={HLA}
                             isBlog={HLA}
-                            title="Chatify"
-                            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-                            ghLink="https://github.com/soumyajit4419/Chatify"
-                            demoLink="https://chatify-49.web.app/"
+                            title="HLA antibody database"
+                            description="I created a mvc architectured website. User can reach hla database. Data mined from pubmed by Csernok Ladislav."
                         />
                     </Col>
                 </Row>
