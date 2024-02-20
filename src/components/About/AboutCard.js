@@ -1,40 +1,38 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-
+import { FaBirthdayCake, FaHome } from "react-icons/fa";
+import { AiFillMail } from "react-icons/ai";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+          <p style={window.innerWidth>=600?{ textAlign: "justify" ,marginLeft:70, marginRight:70}:{textAlign: "justify"}}>
+            -   Hello dear Reader, my name is <span className="purple">Milán Horváth</span> and I am 
+            from <span className="purple"> Pusztaszabolcs, Hungary.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            -   I am currently working as a software developer at <span className="purple">Hewlett Packard</span>.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            -   I have master degree of Computer Science. And I learnt at ELTE University in Budapest.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            
           </p>
+          <h4 style={{textAlign:"left", fontSize:25}}>My connections:</h4>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+            <FaBirthdayCake /> 1997.06.15
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <FaHome /> Hungary, 2490 Pusztaszabolcs
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              
+            <AiFillMail /> hormilag@gmail.com
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>

@@ -5,17 +5,19 @@ import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
+  DiPostgresql,
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiAzuredevops,
+  SiMysql,
+  SiDotnet,
+  SiTypescript,
+  SiVaadin,
+  SiSpring,
+  SiPowershell,
+  SiMicrosoftexcel,
+  SiVisualstudio,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -23,46 +25,46 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+      <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+      <SiTypescript /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <SiDotnet />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+      <SiAzuredevops />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <SiVisualstudio />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <SiMicrosoftexcel />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+      <SiPowershell />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+      <SiSpring />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      <SiVaadin />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+      <DiPostgresql />
       </Col>
     </Row>
   );

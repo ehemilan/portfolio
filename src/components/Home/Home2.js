@@ -19,37 +19,8 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci ac auctor augue mauris augue neque gravida in. Dignissim suspendisse in est ante in nibh mauris. Tincidunt dui ut ornare lectus sit amet est placerat in. Convallis tellus id interdum velit laoreet id donec. Id faucibus nisl tincidunt eget. Dui sapien eget mi proin sed libero enim. Lectus sit amet est placerat in egestas erat. At risus viverra adipiscing at in tellus integer. Diam phasellus vestibulum lorem sed. Nisi est sit amet facilisis magna etiam tempor orci. Odio tempor orci dapibus ultrices in iaculis nunc. Urna nunc id cursus metus aliquam eleifend mi in nulla. Montes nascetur ridiculus mus mauris vitae. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Nisl pretium fusce id velit ut tortor pretium viverra.
+              
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -120,3 +91,36 @@ function Home2() {
   );
 }
 export default Home2;
+/*I fell in love with programming and I have at least learnt
+              something, I think… 🤷‍♂️
+              <br />
+              <br />I am fluent in classics like
+              <i>
+                <b className="purple"> C++, Javascript and Go. </b>
+              </i>
+              <br />
+              <br />
+              My field of Interest's are building new &nbsp;
+              <i>
+                <b className="purple">Web Technologies and Products </b> and
+                also in areas related to{" "}
+                <b className="purple">
+                  Blockchain.
+                </b>
+              </i>
+              <br />
+              <br />
+              Whenever possible, I also apply my passion for developing products
+              with <b className="purple">Node.js</b> and
+              <i>
+                <b className="purple">
+                  {" "}
+                  Modern Javascript Library and Frameworks
+                </b>
+              </i>
+              &nbsp; like
+              <i>
+                <b className="purple"> React.js and Next.js</b>
+              </i>
+
+              */

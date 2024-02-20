@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.svg";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
+import { TfiCommentsSmiley } from "react-icons/tfi";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -76,7 +77,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                University projects
               </Nav.Link>
             </Nav.Item>
 
@@ -92,11 +93,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                href="/funfact"
+              
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <TfiCommentsSmiley style={{ marginBottom: "2px" }} /> Fun facts
               </Nav.Link>
             </Nav.Item>
 
