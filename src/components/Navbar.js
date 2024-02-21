@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.svg";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import {
   AiOutlineHome,
@@ -13,6 +12,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { DiGithub } from "react-icons/di";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -90,17 +90,25 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
-                href="/funfact"
-              
+                as={Link}
+                to="/github"
+                onClick={() => updateExpanded(false)}
+              >
+                <DiGithub style={{ marginBottom: "2px" }} /> Github
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/funfact"
                 onClick={() => updateExpanded(false)}
               >
                 <TfiCommentsSmiley style={{ marginBottom: "2px" }} /> Fun facts
               </Nav.Link>
             </Nav.Item>
-
+            
            
           </Nav>
         </Navbar.Collapse>

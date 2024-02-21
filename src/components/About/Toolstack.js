@@ -1,15 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgMicrosoft } from "react-icons/cg";
 import { DiGit } from "react-icons/di";
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
   SiVisualstudio,
-  SiWindowsterminal,
   SiMicrosoft,
 } from "react-icons/si";
 

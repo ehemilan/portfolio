@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import { FaBirthdayCake, FaHome } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 function AboutCard() {
@@ -9,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={window.innerWidth>=600?{ textAlign: "justify" ,marginLeft:70, marginRight:70}:{textAlign: "justify"}}>
-            -   Hello dear Reader, my name is <span className="purple">Milán Horváth</span> and I am 
+            -   Hello dear Visitor, my name is <span className="purple">Milán Horváth</span> and I am 
             from <span className="purple"> Pusztaszabolcs, Hungary.</span>
             <br />
             -   I am currently working as a software developer at <span className="purple">Hewlett Packard</span>.
