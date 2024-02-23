@@ -19,18 +19,26 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci ac auctor augue mauris augue neque gravida in. Dignissim suspendisse in est ante in nibh mauris. Tincidunt dui ut ornare lectus sit amet est placerat in. Convallis tellus id interdum velit laoreet id donec. Id faucibus nisl tincidunt eget. Dui sapien eget mi proin sed libero enim. Lectus sit amet est placerat in egestas erat. At risus viverra adipiscing at in tellus integer. Diam phasellus vestibulum lorem sed. Nisi est sit amet facilisis magna etiam tempor orci. Odio tempor orci dapibus ultrices in iaculis nunc. Urna nunc id cursus metus aliquam eleifend mi in nulla. Montes nascetur ridiculus mus mauris vitae. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Nisl pretium fusce id velit ut tortor pretium viverra.
-              
+              I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+            </p>
+            <p >
+              I am fluent in classics like C++, Javascript and Go.
+            </p>
+            <p>
+              My field of Interest's are building new  Web Technologies and Products and also in areas related to Blockchain.
+            </p>
+            <p >
+              Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks  like React.js and Next.js
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} 
+              <img src={myImg}
                 style={{
-                  borderRadius: '50%', 
+                  borderRadius: '50%',
                   overflow: 'hidden',
                 }}
-              className="img-fluid" alt="avatar" />
+                className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -61,7 +69,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              
+
               <li className="social-icons">
                 <a
                   href="https://twitter.com/Soumyajit4419"
@@ -69,7 +77,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                 
+
                   <AiFillMail />
                 </a>
               </li>

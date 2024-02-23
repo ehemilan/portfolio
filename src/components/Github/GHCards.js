@@ -2,7 +2,7 @@ import React, {useEffect, useState}from "react";
 import Axios from "axios";
 import RepoCard from "./RepoCard";
 import { Col, Container, Row } from "react-bootstrap";
-
+import api_key from "./api"
 
     
 function GitHubCards() {
@@ -11,7 +11,6 @@ function GitHubCards() {
   
     useEffect(() => {
       const fetchData = async () => {
-        const api_key = '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';
   
         try {
           const reposResponse = await Axios.get(`https://api.github.com/users/b1v655/repos`, {
