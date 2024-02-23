@@ -11,7 +11,7 @@ function GitHubCards() {
   
     useEffect(() => {
       const fetchData = async () => {
-        const api_key = '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';
+        const api_key = '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';
   
         try {
           const reposResponse = await Axios.get(`https://api.github.com/users/b1v655/repos`, {

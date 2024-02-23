@@ -9,7 +9,7 @@ import { FaCircle, FaStar } from "react-icons/fa";
 import colors from "./colors.json"
 const RepoCard = ({ repo, language }) => {
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" >
       <Card.Header style={{borderBottom:5,borderBottomColor:"purple"}}>
        
          
@@ -38,17 +38,17 @@ const RepoCard = ({ repo, language }) => {
 
             {repo.language ? (
               <>
-              <Col><React.Fragment>
+              <Col xs={1}><React.Fragment>
                 
                 <FaCircle  style={{ color: colors[repo.language],marginRight:-10}}/
                   >
               </React.Fragment>
               </Col>
-              <Col>
+              <Col xs={5}>
                 <React.Fragment>
                   
 
-                  <p style={{ marginRight: "10px" }}>
+                  <p style={{ marginRight: "10px" ,fontSize:15}}>
                     {repo.language}
                   </p>
                 </React.Fragment>
@@ -56,9 +56,20 @@ const RepoCard = ({ repo, language }) => {
               </>
               
 
-            ) : null}
+            ) : (
+              <>
+              <Col xs={3}><React.Fragment>
+              </React.Fragment>
+              </Col>
+              <Col xs={3}>
+                <React.Fragment>
+                  
+                </React.Fragment>
+              </Col>
+              </>
+            )}
             {
-              <Col>
+              <Col xs={5}>
                 <React.Fragment>
                   <a
                     href={repo.html_url}
@@ -73,13 +84,6 @@ const RepoCard = ({ repo, language }) => {
                     <FaStar />
                     {repo.stargazers_count}
                   </a>
-                </React.Fragment>
-              </Col>
-
-            }
-            {
-              <Col>
-                <React.Fragment>
                   <a
                     href={`${repo.html_url}/fork`}
                     target="_blank"

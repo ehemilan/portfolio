@@ -130,7 +130,6 @@ function Experiences({ choosen }) {
                             (TrackFlow)"
                             description="HPE managing as 3rd party corporation software updates for miltinational customers. To this operation the corp must holding all information of software updating. For example who works on updating of application and how many time cost an updating. My application supports this functionality."
                             ghLink="https://trackflowinteractive.web.app/"
-                            demoLink="/swumst"
                         />
                     </Col>
                     <Col md={4} className="project-card">
@@ -140,7 +139,6 @@ function Experiences({ choosen }) {
                             title="NDDC demo (HPE Las Vegas event)"
                             description="For easier sets up a gateway, we can creat genial softwares. Website - what I wrote - sets up aruba devices from anywhere. This worldwide reachable website was presented on HPE Las Vegas 2023 event!"
                             ghLink="https://arubanddc.azurewebsites.net/main"
-                            demoLink="/nddc"
                         />
                     </Col>
                     <Col md={4} className="project-card">
@@ -149,7 +147,6 @@ function Experiences({ choosen }) {
                             isBlog={false}
                             title="Bios pasword for HP notebooks"
                             description="This program is written in powershell. It creates a bios password for HP notebook. It calls Bios poweron password. It is important to secure all user data."
-                            demoLink="/poweron"
                         />
                     </Col>
                 </Row>
