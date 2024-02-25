@@ -23,7 +23,7 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", position:'fixed', right:30, bottom:65}}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -33,12 +33,16 @@ function ResumeNew() {
         <Row className="resume" >
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786? 1 : 0.4} />
-            
-            <Page pageNumber={2} scale={width > 786 ? 1 : 0.4} />
+            <br/>
+            <br/>
           </Document>
         </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row className="resume" >
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={2} scale={width > 786 ? 1 : 0.4} />
+            </Document>
+        </Row>
+        <Row style={{ justifyContent: "center", position: "relative" , marginBottom:50}}>
           
         </Row>
       </Container>

@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { SiGitbook } from "react-icons/si";
 
 import { Container, Row, Col } from "react-bootstrap";
-import { BsStar } from "react-icons/bs";
+import { BsGithub, BsStar } from "react-icons/bs";
 import { CgGitFork } from "react-icons/cg";
 import { FaCircle, FaStar } from "react-icons/fa";
 import colors from "./colors.json"
@@ -17,7 +17,7 @@ const RepoCard = ({ repo, language }) => {
 
               <h6 style={{marginTop:30,marginBottom:30}}>
                 
-            <SiGitbook />
+            <BsGithub />
                 <a
                   href={repo.html_url}
                   target="_blank"

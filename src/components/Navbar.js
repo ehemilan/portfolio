@@ -13,6 +13,8 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 import { DiGithub } from "react-icons/di";
+import { BsGithub } from "react-icons/bs";
+import { FaUniversity } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -64,7 +66,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Carrier history
               </Nav.Link>
             </Nav.Item>
 
@@ -74,7 +76,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <FaUniversity
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 University projects
@@ -96,7 +98,7 @@ function NavBar() {
                 to="/github"
                 onClick={() => updateExpanded(false)}
               >
-                <DiGithub style={{ marginBottom: "2px" }} /> Github
+                <BsGithub style={{ marginBottom: "2px" }} /> Github
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>

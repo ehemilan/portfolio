@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import BURGLAR from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import MASTER from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import BACHELOR from "../../Assets/Projects/blog.png";
+import BURGLAR from "../../Assets/Projects/LOPAKODO.png";
+import PINCER from "../../Assets/Projects/PINCER.png";
+import MASTER from "../../Assets/Projects/LIDAR.png";
+import PORTAL from "../../Assets/Projects/PORTAL.png";
+import BACHELOR from "../../Assets/Projects/BACHELOR.png";
+import FYT from "../../Assets/Projects/FYT.png";
 
 function Projects() {
   return (
@@ -15,10 +15,10 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Projects at <strong className="purple">University </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are few projects I've worked at university.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -45,7 +45,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={PINCER}
               isBlog={true}
               title="DotNETPincer"
               description="An application written in ASP.Net. This app managing food orders of a food delivery company. A wpf app supports the employees in managing foodcontents on the site."
@@ -55,25 +55,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={PORTAL}
               isBlog={true}
               title="News Portal"
               description="This program also written in c# ASP.Net. This site holds news."
               demoLink="https://github.com/b1v655/NewsPortal"
             />
           </Col>
+        
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
-              isBlog={true}
-              title="Webapplication developement test"
-              description="This program was the test."
-              dhLink="https://github.com/b1v655/WAFzh"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
+              imgPath={FYT}
               isBlog={true}
               title="FindYourTeacher"
               description="You need to find your teacher and write your mark in your book in. The teacher is available part time so you need find him fast. This game was a test at university. Written in C# used sql and entity framework"
