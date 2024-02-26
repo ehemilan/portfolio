@@ -6,7 +6,7 @@ function Education() {
   return (
     <>
      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons" style={{backgroundColor:"white"}}>
+      <Col xs={4} md={2} className="tech-icons" style={{backgroundColor:"white"}} onClick={ () => window.open("https://gis.inf.elte.hu/projects/vasuti-infrastruktura-szegmentalasa/", '_blank', 'noopener,noreferrer')}>
         <img src={elte} alt="elte" width="100" height="100"   />
       </Col>
       <Col xs={4} md={2} className="tech-icons" style={{backgroundColor:"white"}} onClick={ () => window.open("https://archive.pusztaszabolcs.hu/dokumentumok/Horvath_Milan_meltatas.pdf", '_blank', 'noopener,noreferrer')} >
