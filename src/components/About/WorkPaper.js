@@ -21,6 +21,7 @@ import {
     DiHtml5,
     DiJava,
     DiJavascript1,
+    DiMsqlServer,
     DiNodejs,
     DiPostgresql,
     DiReact,
@@ -28,7 +29,6 @@ import {
 import {
     SiTypescript,
     SiDotnet,
-    SiMysql,
     SiAzuredevops,
     SiSpring,
     SiVaadin,
@@ -67,7 +67,7 @@ function Experiences({ choosen }) {
                         <SiDotnet /> ASP.Net
                     </li>
                     <li className="about-activity">
-                        <SiMysql /> SQL
+                        <DiMsqlServer/> SQL
                     </li>
                     <li className="about-activity">
                         <SiAzuredevops /> Azure DevOps
@@ -104,7 +104,7 @@ function Experiences({ choosen }) {
                         <SiDotnet /> ASP.Net
                     </li>
                     <li className="about-activity">
-                        <SiMysql /> SQL
+                        <DiMsqlServer /> SQL
                     </li>
                     <li className="about-activity">
                         <SiAzuredevops /> Azure DevOps
@@ -241,7 +241,7 @@ function Experiences({ choosen }) {
                         <SiDotnet /> ASP.Net
                     </li>
                     <li className="about-activity">
-                        <SiMysql /> SQL
+                        <DiMsqlServer/> SQL
                     </li>
                 </ul>
                 

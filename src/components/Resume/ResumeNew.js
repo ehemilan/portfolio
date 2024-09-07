@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/Curriculum_Vitae.pdf";
+import pdf2 from "../../Assets/Curriculum_Vitae.pdf";
+import pdf from "../../Assets/CV_english.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -23,10 +24,21 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", position:'fixed', right:30, bottom:65}}
+            style={{ maxWidth: "250px",margin:25}}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+        </Row>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf2}
+            target="_blank"
+            style={{ maxWidth: "250px", margin:25 }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV in Hungarian
           </Button>
         </Row>
 
