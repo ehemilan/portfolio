@@ -87,7 +87,7 @@ const MyImageGallery = () => {
         justifyContent: 'center', // Center thumbnails horizontally
         flexWrap: 'wrap',
         gap: '10px', // Space between thumbnails
-        maxWidth: '60%', // Optional: limits the width of the gallery
+        maxWidth: '80%', // Optional: limits the width of the gallery
       }} >
         {imagesT.map((image, index) => (
             
@@ -96,7 +96,7 @@ const MyImageGallery = () => {
             src={image}
             alt={`Thumbnail ${index + 1}`}
             style={{
-              width: '150px',
+              width: '250px',
               height: 'auto',
               
               cursor: 'pointer',
