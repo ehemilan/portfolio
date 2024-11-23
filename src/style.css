@@ -86,6 +86,7 @@ button:focus {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
+  z-index: 2 !important;
   font-size: 1.2rem !important;
 }
 
@@ -268,6 +269,9 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+}
+.margin-top {
+  margin-top: 100px !important;
 }
 
 .heading {
@@ -564,13 +568,36 @@ button:focus {
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
+.picture-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 0px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(137, 160, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
 
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
   }
 }
-
+@media (max-width: 767px) {
+  .picture-icons {
+    margin: 10px !important;
+  }
+}
+.picture-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(115, 127, 230, 0.883) !important;
+}
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;

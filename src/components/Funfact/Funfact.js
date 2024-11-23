@@ -4,12 +4,15 @@ import homeLogo from "../../Assets/startup.svg";
 import Particle from "../Particle";
 import Type from "./Type";
 import Poets from "./Poets";
+import MyImageGallery from "./Galery";
 function Funfact() {
   return (
     <section>
-        <Container fluid className="resume-section" >
+        <Container fluid className="about-section" >
         <Particle />
-          <Row>
+        
+      <Container>
+      <Row>
             <Col md={7} className="home-header">
 
               <h1 className="heading-name">
@@ -31,8 +34,10 @@ function Funfact() {
               />
             </Col>
           </Row>
-          
+          <MyImageGallery />
           <Poets style={{marginBottom:100}}/>
+      </Container>
+          
         </Container>
         
     </section>

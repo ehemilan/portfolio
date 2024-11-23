@@ -7,6 +7,8 @@ import video3 from '../../Videos/kozelet.mp4'
 import video2 from '../../Videos/sors.mp4'
 import video5 from '../../Videos/kutyadal.mp4'
 import video4 from '../../Videos/szerettek.mp4'
+import video6 from '../../Videos/iskola.mp4'
+import video7 from '../../Videos/elsonap.mp4'
 function Poets() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -43,7 +45,7 @@ function Poets() {
           height="auto"
         />
         <ReactPlayer
-          url={video3}
+          url={video6}
           controls
           width="30%"
           height="auto"
@@ -63,8 +65,23 @@ function Poets() {
           width="30%"
           height="auto"
         />
-
+<ReactPlayer
+  url={video7}
+  controls
+  width="30%"
+  height="auto"
+/>
       </Row>
+      
+      {/*<Row style={{ justifyContent: "center"}}>
+
+        <ReactPlayer
+          url={video3}
+          controls
+          width="30%"
+          height="auto"
+        />
+      </Row>*/}
     </div> :
 
     < div style={{ justifyContent: "center" , marginBottom: 50 }}>
@@ -93,7 +110,7 @@ function Poets() {
           height="auto"
         />
       </Row>
-      <Row style={{ justifyContent: "center" , margin:10}}>
+      {/*<Row style={{ justifyContent: "center" , margin:10}}>
 
         <ReactPlayer
           url={video3}
@@ -101,7 +118,7 @@ function Poets() {
           width="90%"
           height="auto"
         />
-      </Row>
+      </Row>*/}
       <Row style={{ justifyContent: "center" , margin:10}}>
 
         <ReactPlayer
@@ -115,6 +132,24 @@ function Poets() {
 
         <ReactPlayer
           url={video5}
+          controls
+          width="90%"
+          height="auto"
+        />
+      </Row>
+      <Row style={{ justifyContent: "center", margin:10}}>
+
+        <ReactPlayer
+          url={video6}
+          controls
+          width="90%"
+          height="auto"
+        />
+      </Row>
+      <Row style={{ justifyContent: "center", margin:10}}>
+
+        <ReactPlayer
+          url={video7}
           controls
           width="90%"
           height="auto"
