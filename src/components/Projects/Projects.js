@@ -6,7 +6,7 @@ import BURGLAR from "../../Assets/Projects/LOPAKODO.png";
 import PINCER from "../../Assets/Projects/PINCER.png";
 import MASTER from "../../Assets/Projects/LIDAR.png";
 import PORTAL from "../../Assets/Projects/PORTAL.png";
-import BACHELOR from "../../Assets/Projects/BACHELOR.png";
+import BACHELOR from "../../Assets/Projects/bahelor.jfif";
 import FYT from "../../Assets/Projects/FYT.png";
 
 function Projects() {

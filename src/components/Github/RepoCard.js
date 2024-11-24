@@ -9,7 +9,7 @@ import { FaCircle, FaStar } from "react-icons/fa";
 import colors from "./colors.json"
 const RepoCard = ({ repo, language }) => {
   return (
-    <Card className="project-card-view" >
+    <Card className="project-card-view-gh" >
       <Card.Header style={{borderBottom:5,borderBottomColor:"purple"}}>
        
          

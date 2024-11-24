@@ -476,7 +476,19 @@ button:focus {
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(72, 72, 144, 0.561) !important;
 }
-
+.project-card-view-gh {
+  box-shadow: 0 4px 5px 3px rgba(54, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: #130a2f !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view-gh:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(72, 72, 144, 0.561) !important;
+}
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
