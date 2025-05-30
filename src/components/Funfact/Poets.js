@@ -59,12 +59,12 @@ function Poets() {
           width="30%"
           height="auto"
         />
-        <ReactPlayer
+        {/*<ReactPlayer
           url={video5} // Vagy más videó URL-je
           controls
           width="30%"
           height="auto"
-        />
+        />*/}
 <ReactPlayer
   url={video7}
   controls
@@ -128,7 +128,7 @@ function Poets() {
           height="auto"
         />
       </Row>
-      <Row style={{ justifyContent: "center", margin:10}}>
+      {/*<Row style={{ justifyContent: "center", margin:10}}>
 
         <ReactPlayer
           url={video5}
@@ -136,7 +136,7 @@ function Poets() {
           width="90%"
           height="auto"
         />
-      </Row>
+      </Row>*/}
       <Row style={{ justifyContent: "center", margin:10}}>
 
         <ReactPlayer
