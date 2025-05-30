@@ -47,7 +47,6 @@ const CrossFade = ({ src }) => {
               
               cursor: 'pointer',
               borderRadius: '8px',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
             }}
         />
       </AnimatePresence>
@@ -125,7 +124,7 @@ const MyImageGallery = () => {
     require.context('../../Images/full', true, /\.(jpe?g|png)$/)
   );
   const thumbnailImagesWithPaths = importAll(
-    require.context('../../Images/thumbs', true, /\.(jpe?g|png)$/)
+    require.context('../../Images/thumbs2', true, /\.(jpe?g|png)$/)
   );
 
   const groupedfulls = groupByFolder(fullImagesWithPaths);
@@ -140,6 +139,13 @@ const MyImageGallery = () => {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   const [indexes, setIndexes] = useState(thumbnailGroups.map(group => random(0, group.length)));
+  
+  useEffect(() => {
+  thumbnailGroups.flat().forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+}, [thumbnailGroups]);
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndexes(thumbnailGroups.map(group => random(0, group.length - 1)));
@@ -148,7 +154,6 @@ const MyImageGallery = () => {
     return () => clearInterval(intervalId);
   }, [thumbnailGroups]);
 
-  
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'; // Disable scroll when modal is open
