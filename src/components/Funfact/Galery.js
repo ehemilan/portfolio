@@ -121,9 +121,16 @@ function random(min, max) {
 }
 const MyImageGallery = () => {
 
+  const fullImagesWithPaths = importAll(
+    require.context('../../Images/full', true, /\.(jpe?g|png)$/)
+  );
   const thumbnailImagesWithPaths = importAll(
     require.context('../../Images/thumbs', true, /\.(jpe?g|png)$/)
   );
+
+  const groupedfulls = groupByFolder(fullImagesWithPaths);
+
+  const fullGroups = Object.values(groupedfulls);
 
   const groupedThumbnails = groupByFolder(thumbnailImagesWithPaths);
 
@@ -150,7 +157,7 @@ const MyImageGallery = () => {
     }
   }, [isOpen]);
 
-  const [imagesGroup, setImagesGroup] = useState(thumbnailGroups[0]);
+  const [imagesGroup, setImagesGroup] = useState(fullGroups[0]);
   return (
     <div
       style={{
@@ -180,7 +187,7 @@ const MyImageGallery = () => {
         {
           <ImageWithCaption
             thumbnailsGroups={thumbnailGroups}
-            fullImagesGroups={thumbnailGroups}
+            fullImagesGroups={fullGroups}
             captionsGroups={['Hike to top of Badacsony Hill','Night in Budapest','Derby in Kincsem park','Old school vechicles','Nature nearby', 'New year pics', 'Tropicarium', 'Winter in my city', 'Winter at daylight']}
 
             index={indexes}
