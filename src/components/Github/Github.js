@@ -11,7 +11,6 @@ function Github() {
  <Particle />
   <GithubCards />
     
-  <Github2 />
   </Container>
     </div>
  
